@@ -35,6 +35,7 @@
     "typescript": "3.9.6"
   },
   "resolutions": {
+    "immutable": "3.8.2",
     "lodash": "4.17.19",
     "react-dev-utils": "^10.0.0"
   },
