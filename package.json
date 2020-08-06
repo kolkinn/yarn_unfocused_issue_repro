@@ -1,0 +1,51 @@
+{
+  "name": "yarn-unfocused-issue-repro",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build:studio": "yarn workspace sanity-studio build",
+    "reproduce": "yarn && yarn build:studio",
+    "workaround": "yarn workspaces focus sanity-studio && yarn build:studio"
+  },
+  "devDependencies": {
+    "@types/eslint": "7.2.0",
+    "@typescript-eslint/eslint-plugin": "3.5.0",
+    "@typescript-eslint/parser": "3.5.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.4.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-config-airbnb-typescript": "8.0.2",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-config-react-app": "5.2.1",
+    "eslint-import-resolver-typescript": "2.0.0",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "eslint-plugin-flowtype": "5.2.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-only-warn": "1.0.2",
+    "eslint-plugin-react": "7.20.3",
+    "eslint-plugin-react-hooks": "4.0.5",
+    "husky": "4.2.5",
+    "stylelint": "13.6.1",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-recess-order": "2.0.4",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-order": "4.1.0",
+    "typescript": "3.9.6"
+  },
+  "resolutions": {
+    "lodash": "4.17.19",
+    "react-dev-utils": "^10.0.0"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "14.4.0"
+  },
+  "volta": {
+    "node": "14.4.0",
+    "yarn": "1.22.4"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "pulumi",
+  "private": true,
+  "dependencies": {
+    "@pulumi/azure": "3.11.0",
+    "@pulumi/pulumi": "2.6.0"
+  }
+}
