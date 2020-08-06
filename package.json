@@ -5,9 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build:studio": "yarn workspace sanity-studio build",
-    "reproduce": "yarn && yarn build:studio",
-    "workaround": "yarn workspaces focus sanity-studio && yarn build:studio"
+    "reproduce": "yarn && yarn workspace sanity-studio build"
   },
   "devDependencies": {
     "@types/eslint": "7.2.0",
