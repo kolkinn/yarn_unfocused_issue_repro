@@ -1,3 +1,7 @@
+# Resolved: this issue can no longer be reproduced
+
+This issue was resolved by upgrading Sanity Studio to version 1.150.1
+
 # Reproduction repo
 This repo reproduces hoisting issue with slate and yarn workspaces.
 
